@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "Patient" table = "Patient">
+      
+      <meta attribute = "class-description">
+         Patient
+      </meta>
+      
+      <id name = "id" type = "int" column = "id">
+         <generator class="native"/>
+      </id>
+      
+      <property name="username" column="username" type="string"/>
+<property name="password" column="password" type="string"/>
+<property name="" column="" type=""/>
+      <property name = "firstName" column = "firstname" type = "string"/>
+      <property name = "lastName" column = "lastname" type = "string"/>
+      <property name = "phone" column = "phone" type = "int"/>
+<property name="email" column="email" type="string"/>
+<property name="ssn" column="ssn" type="string"/>
+<property name="address" column="address" type="string"/>      
+   </class>
+</hibernate-mapping>
